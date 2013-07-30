@@ -1,9 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Extras", "NuGet.Extras\NuGet.Extras.csproj", "{F036B3F1-EA7C-4D69-B9B4-CED15A3475AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Extras.Tests", "NuGet.Extras.Tests\NuGet.Extras.Tests.csproj", "{4CDE1B34-3CB5-46BE-B259-421FBD380C42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BC89B369-FA4E-4C80-AD27-604458116DE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

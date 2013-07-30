@@ -54,6 +54,11 @@ namespace NuGet.Extras
             return null;
         }
 
+        public IList<KeyValuePair<string, string>> GetValues(string section, bool isPath)
+        {
+            return null;
+        }
+
         /// <summary>
         /// Doesnt set a value
         /// </summary>

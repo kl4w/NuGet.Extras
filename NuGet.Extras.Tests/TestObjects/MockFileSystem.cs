@@ -208,6 +208,16 @@ namespace NuGet.Extras.Tests.TestObjects
             Paths[path] = getStream;
         }
 
+        public virtual void AddFile(string path, Action<Stream> getStream)
+        {
+            AddFile(path, getStream.Target.ToString());
+        }
+
+        public virtual Stream CreateFile(string path)
+        {
+            return new MemoryStream();
+        }
+
         public virtual DateTimeOffset GetLastModified(string path)
         {
             return DateTime.UtcNow;
@@ -216,6 +226,11 @@ namespace NuGet.Extras.Tests.TestObjects
         public virtual DateTimeOffset GetCreated(string path)
         {
             return DateTime.UtcNow;
+        }
+
+        public virtual void MakeFileWritable(string path)
+        {
+            throw new NotImplementedException();
         }
     }
 }
